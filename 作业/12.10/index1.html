@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #box {
+            width: 960px;
+            min-height: 100%;
+            margin: 0 auto;
+        }
+
+        .box {
+            width: 320px;
+            height: 480px;
+        }
+
+        img {
+            width: 320px;
+            height: 480px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box" v-lee>
+        <div v-for="(i in 20" class="box">
+            <img src="" data-src="http://img2.imgtn.bdimg.com/it/u=4061496289,2621282903&fm=26&gp=0.jpg" alt="">
+        </div>
+    </div>
+</body>
+<script src="vue.js"></script>
+<script src="vue-resource.js"></script>
+<script>
+    Vue.directive('lee', {
+        inserted(dom) {
+            var box = dom.getElementsByTagName("div")
+            var img = dom.getElementsByTagName("img")
+            // console.log(box.length)
+            var num = box.length
+            var n = 0;
+            // 页面载入完毕加载可视区域内的图片
+            lazyLoad();
+            window.onscroll = lazyLoad;
+            // 监听页面滚动事件
+            function lazyLoad() {
+                // 可见区域高度
+                var seeHeight = document.documentElement.clientHeight / 1.5;
+                // 滚动条距离顶部高度
+                var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                for (var i = n; i < num; i++) {
+                    if (img[i].offsetTop < seeHeight + scrollTop) {
+                        if (img[i].getAttribute("src") == "") {
+                            img[i].src = img[i].getAttribute("data-src");
+                        } 
+                        n = i + 1;
+                    }
+                }
+            }
+        }
+    })
+    new Vue({
+        el: "#box",
+    })
+</script>
+
+</html>
