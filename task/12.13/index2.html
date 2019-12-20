@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			[v-cloak] {
+				display: none;
+			}
+			.l{
+				width: 80px;
+				height: 120px;
+				background: rgba(0,0,0,0.5);
+				text-align: center;
+				line-height: 120px;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				font-size: 20px;
+				color: #FFFFFF;
+				margin-top: -60px;
+			}
+			.r{
+				width: 80px;
+				height: 120px;
+				background: rgba(0,0,0,0.5);
+				text-align: center;
+				line-height: 120px;
+				position: absolute;
+				top: 50%;
+				right: 0;
+				font-size: 20px;
+				color: #FFFFFF;
+				margin-top: -60px;
+			}
+			.l-leave{
+				opacity: 1;
+				left: 0;
+			}
+			.l-leave-active,.l-enter-active{
+				transition: all .3s;
+			}
+			.l-leave-to{
+				opacity: 0;
+				left: -100%;
+			}
+			.l-enter{
+				left: 100%;
+				opacity: 0;
+			}
+			.l-enter-to{
+				left: 0;
+				opacity: 1;
+			}
+			.r-leave{
+				opacity: 1;
+				left: 0;
+			}
+			.r-leave-active,.r-enter-active{
+				transition: all .3s;
+			}
+			.r-leave-to{
+				left: 100%;
+				opacity: 0;
+			}
+			.r-enter{
+				opacity: 0;
+				left: -100%;
+			}
+			.r-enter-to{
+				opacity: 1;
+				left: 0;
+			}
+		</style>
+	</head>
+
+	<body style="overflow-x: hidden;">
+		<div id="box" v-cloak="">
+			<no1 style="width: 800px;margin: 0 auto;" :box_arr="arr"></no1>
+		</div>
+		
+		
+		<template id="no1">
+			<div style="position:relative">
+				<transition :name="tran" v-for="(i,$index) in arr">
+					<div style="width: 800px;height:500px;position: absolute;" v-show="$index==index">
+						<img :src="i" style="width:800px;height:500px;" ref="img"/>
+					</div>
+				</transition>
+				<div class="l" @click="l">
+					<
+				</div>
+				<div class="r" @click="r">
+					>
+				</div>
+			</div>
+		</template>
+	</body>
+	<script src="vue.js"></script>
+	<script src="index2.js"></script>
+
+</html>

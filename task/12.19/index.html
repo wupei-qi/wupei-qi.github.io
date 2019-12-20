@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <div id="box" v-cloak="">
+        <div class="wf-wrap">
+            <div class="wf-table">
+                <div class="logo">
+                    <a href="#">
+                        <img src="https://ccdn.goodq.top/caches/40c05a76d970c388d38b924930a6f580/aHR0cDovLzU3YTdlNmFhZjJmNzgudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wNi9hM2QyMDJkNDQzYjk3M2JhOGJiOTI0ZTNhZTc3ZTNiNi5wbmc_p_p100_p_3D.png"
+                            alt="">
+                    </a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#/" class="color">首页</a></li>
+                        <li><a href="#/product">产品系列</a></li>
+                        <li><a href="#/news">新闻中心</a></li>
+                        <li><a href="#/we">加入我们</a></li>
+                        <li><a href="#/contact">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="con">
+            <router-view>
+
+            </router-view>
+        </div>
+        <div class="footer">
+            <div class="wf-containe">
+                <div class="qfe_wrapper">
+                    <h4 class="qfe-t">关于我们</h4>
+                    <div class="qfe-txt">
+                        可视化图文内容编辑让网站制作和维护成为一件轻松的事。普通用户还是专业制作人员都能使用起飞页设计出最具专业水准的网站。
+                    </div>
+                </div>
+                <div class="qfe_wrapper">
+                    <h4 class="qfe-t ml">联系我们</h4>
+                    <span>咨询电话 : 4000-000-100</span>
+                    <span>商务合作 : abc@abcde.com</span>
+                    <span>联系我们 : abcd@abcde.com</span>
+                </div>
+                <div class="qfe_wrapper">
+                    <h4 class="qfe-t ml">帮助与支持</h4>
+                    <span>帮助中心</span>
+                    <span>服务条款</span>
+                    <span>常见问题</span>
+                </div>
+                <div class="qfe_wrapper">
+                    <h4 class="qfe-t ml">关注我们</h4>
+                    <span>
+                        <img class="qfe-img"
+                            src="https://ccdn.goodq.top/caches/40c05a76d970c388d38b924930a6f580/aHR0cDovLzU3YTdlNmFhZjJmNzgudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8wOS84ZjM0YTQ3OWZiZjExZWE5NzUwMmI2ZWUyYWIwODJhNS5qcGc_p_p100_p_2FYXR0YWNobWVudF9pZD0xMDg3Mw_p_p100_p_3D_p_p100_p_3D.jpg"
+                            alt="">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="contentinfo">
+            <div class="wf-float-center">
+                <span>
+                    版权所有 有限公司©2020 地址：苏州市工业园区金鸡湖大道99号 苏ICP备0001000号
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- 首页 -->
+    <template id="indexs">
+        <div class="padd">
+            <div class="container">
+                <div class="qfe_wrappe">
+                    <a href="#/news">
+                        <h4 style="color: #c6c6c6">主推产品</h4>
+                    </a>
+                    <p style="color:#bfbfbf">PRODUCT</p>
+                    <span style="border-bottom: 1px solid red"></span>
+                </div>
+                <div class="rs-slide">
+                    <ban></ban>
+                </div>
+                <div class="qfe-element">
+                    <span style="width: 49px;height:76px;font-size:68px;">U</span>
+                    <span style="width: 56px;height:76px;font-size:68px;">m</span>
+                    <span style="width:43px;height:30px;font-size:26px;">360</span>
+                </div>
+                <div style="text-align: center;">
+                    <span style="font-size: 16px;font-weight:bold;color: rgb(57, 57, 57);">
+                        精细快速低剂量成像，高效安全扫描体验
+                    </span>
+                </div>
+                <div class="qfy_style_class">
+                    <no1></no1>
+                </div>
+            </div>
+            <div class="qfy-row">
+                <div>
+                    <p>NEWS</p>
+                    <span class="qfy-row-span" style=" margin-right: 20px;"></span><span
+                        class="row-span">产品系列</span><span class="qfy-row-span" style="margin-left: 20px"></span>
+                </div>
+            </div>
+            <div class="qfe_row">
+                <list></list>
+            </div>
+            <div class="qfy-row">
+                <div>
+                    <p>PRODUCT</p>
+                    <span class="qfy-row-span" style=" margin-right: 20px;"></span><span
+                        class="row-span">产品系列</span><span class="qfy-row-span" style="margin-left: 20px"></span>
+                </div>
+            </div>
+            <div>
+                <div class="section-normal">
+                    <div class="con-row">
+                        <no2></no2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <!-- 产品 -->
+    <template id="product">
+        <div>
+            <div class="product">
+                <div class="product-title">
+                    <div class="product_top">
+                        <div class="rsactiveslide">
+                            <ban></ban>
+                        </div>
+                        <div class="rsactiveslide-rigth">
+                            <div class="rigth-txt">
+                                <p style="margin-bottom: 15px;"><span style="font-size:52px;">Um</span><span
+                                        style="font-size:28px;">360</span></p>
+                                <p style="font-size: 16px; font-weight: bold;color: #393939;">精细快速低剂量成像，高效安全扫描体验</p>
+                            </div>
+                            <div class="rigth-img">
+                                <img src="https://ccdn.goodq.top/caches/40c05a76d970c388d38b924930a6f580/aHR0cDovLzU3YTdlNmFhZjJmNzgudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wNy85NzE0MTdlOTc5YTVmMWJmM2E2NmRmNjVhMzhmNjk3ZS0zMDB4MTUwLnBuZw_p_p100_p_3D_p_p100_p_3D.png"
+                                    alt="">
+                                <img src="https://ccdn.goodq.top/caches/40c05a76d970c388d38b924930a6f580/aHR0cDovLzU3YTdlNmFhZjJmNzgudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wNy9jNTdlNjEyMzc5YzQzODkwN2U1MWQ4M2M5OGI2ZWUyNC0zMDB4MTUwLnBuZw_p_p100_p_3D_p_p100_p_3D.png"
+                                    alt="">
+                                <img src="https://ccdn.goodq.top/caches/40c05a76d970c388d38b924930a6f580/aHR0cDovLzU3YTdlNmFhZjJmNzgudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wNy9jYzgyZmE1NTg4MmI0Y2JhN2UzOTlmZGQwYjMyM2Y1My0zMDB4MTUwLnBuZw_p_p100_p_3D_p_p100_p_3D.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="qfy-row">
+                    <div>
+                        <p>PRODUCT</p>
+                        <span class="qfy-row-span" style=" margin-right: 20px;"></span><span
+                            class="row-span">产品系列</span><span class="qfy-row-span" style="margin-left: 20px"></span>
+                    </div>
+                </div>
+                <div style="margin: 0 auto;max-width:1280px;padding: 0 40px;">
+                    <div style="width:500px;height:42px;text-align: center;margin: 0 auto;padding: 0 390px;">
+                        <ul style="text-align: center;margin:0 auto;width: 100%">
+                            <li
+                                style="float: left;width: 100px;height: 24px;padding: 5px 5px;border: 1px solid #cccccc;line-height: 24px;margin-right: 12px;font-size: 13px">
+                                <a href="#/product/">全部设备</a></li>
+                            <li
+                                style="float: left;width: 100px;height: 24px;padding: 5px 5px;border: 1px solid #cccccc;line-height: 24px;margin-right: 12px;font-size: 13px">
+                                <a href="#/product/shebeifenlei1">设备分类一</a></li>
+                            <li
+                                style="float: left;width: 100px;height: 24px;padding: 5px 5px;border: 1px solid #cccccc;line-height: 24px;margin-right: 12px;font-size: 13px">
+                                <a href="#/product/shebeifenlei2">设备分类二</a></li>
+                            <li
+                                style="float: left;width: 100px;height: 24px;padding: 5px 5px;border: 1px solid #cccccc;line-height: 24px;margin-right: 12px;font-size: 13px">
+                                <a href="#/product/shebeifenlei3">设备分类三</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <router-view></router-view>
+                </div>
+            </div>
+        </div>
+    </template>
+    <template id="no6">
+        <div style="width: 1190px; margin: 0 auto; overflow: hidden; margin-bottom: 50px;">
+            <div style="clear: both;padding-left: 60px;float:left; width: 1130px;">
+                <div style="float:left;padding-top:30px;position: relative;margin-left:10px;margin-bottom:20px;height:319px;width:260px;"
+                    v-for="(i,$index) in arr">
+                    <div style="width:260px;height:349px;float: left;position: absolute;top:30px;left:10px;transition:all 0.4s;z-index: 999;"
+                    :class="index==$index?'s':''" @mouseover="index=$index" @mouseout="index='-1'" >
+                    </div>
+                    <li
+                        style="height:349px;width:260px;margin-bottom:30px;padding-bottom:30px;padding:10px;float: left;">
+
+                        <div>
+                            <div style="background-color: #e9e9e9;height:349px;width:260px;">
+                                <div
+                                    style="overflow:hidden;display:block;width:260px;text-align:center;padding-bottom:10px;">
+                                    <img style="transition:all 0.4s;" :class="index==$index?'s1':''" :src="i" alt="">
+                                </div>
+                                <div
+                                    style="padding-top:25px;padding-bottom:3px;font-weight:normal;color:#333333;line-height:13px;vertical-align:middle;text-align: center;width: 100%">
+                                    <a href="#"
+                                        style="color:#333333;font-size:14px;font-family:微软雅黑;line-height: 20px;">仪器设备Um350c</a>
+                                </div>
+                                <div style="text-align:center;color:#999999;font-size:12px;font-family:微软雅黑;">
+                                    <p>编辑设备副标题</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+            </div>
+    </template>
+    <template id="no7">
+        <div style="width: 1190px; margin: 0 auto; overflow: hidden; margin-bottom: 50px;">
+            <div style="clear: both;padding-left: 63px;float:left;">
+                <div style="float:left;padding-top:30px;position: relative;margin-left:10px;margin-bottom:20px;height:319px;width:260px;"
+                    v-for="(i,$index) in arr">
+                    <div style="width:260px;height:349px;float: left;position: absolute;top:30px;left:10px;transition:all 0.4s;z-index: 999;"
+                        :class="index==$index?'s':''" @mouseover="index=$index" @mouseout="index='-1'">
+                    </div>
+                    <li
+                        style="height:349px;width:260px;margin-bottom:30px;padding-bottom:30px;padding:10px;float: left;">
+
+                        <div style="">
+                            <div style="background-color: #e9e9e9;height:349px;width:260px;">
+                                <div
+                                    style="overflow:hidden;display:block;width:260px;text-align:center;padding-bottom:10px;">
+                                    <img style="transition:all 0.4s;" :class="index==$index?'s1':''" :src="i" alt="">
+                                </div>
+                                <div
+                                    style="padding-top:25px;padding-bottom:3px;font-weight:normal;color:#333333;line-height:13px;vertical-align:middle;text-align: center;width: 100%">
+                                    <a href="#"
+                                        style="color:#333333;font-size:14px;font-family:微软雅黑;line-height: 20px;">仪器设备Um350c</a>
+                                </div>
+                                <div style="text-align:center;color:#999999;font-size:12px;font-family:微软雅黑;">
+                                    <p>编辑设备副标题</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                </div>
+            </div>
+    </template>
+    <template id="no8" >
+        <div style="width: 1190px; margin: 0 auto; overflow: hidden; margin-bottom: 50px;">
+            <div style="clear: both;padding-left: 63px;float:left;">
+                <div style="float:left;padding-top:30px;position: relative;margin-left:10px;margin-bottom:20px;height:319px;width:260px;"
+                    v-for="(i,$index) in arr">
+                    <div style="width:260px;height:349px;float: left;position: absolute;top:30px;left:10px;transition:all 0.4s;z-index: 999;"
+                        :class="index==$index?'s':''" @mouseover="index=$index" @mouseout="index='-1'">
+                    </div>
+                    <li
+                        style="height:349px;width:260px;margin-bottom:30px;padding-bottom:30px;padding:10px;float: left;">
+
+                        <div style="">
+                            <div style="background-color: #e9e9e9;height:349px;width:260px;">
+                                <div
+                                    style="overflow:hidden;display:block;width:260px;text-align:center;padding-bottom:10px;">
+                                    <img style="transition:all 0.4s;" :class="index==$index?'s1':''" :src="i" alt="">
+                                </div>
+                                <div
+                                    style="padding-top:25px;padding-bottom:3px;font-weight:normal;color:#333333;line-height:13px;vertical-align:middle;text-align: center;width: 100%">
+                                    <a href="#"
+                                        style="color:#333333;font-size:14px;font-family:微软雅黑;line-height: 20px;">仪器设备Um350c</a>
+                                </div>
+                                <div style="text-align:center;color:#999999;font-size:12px;font-family:微软雅黑;">
+                                    <p>编辑设备副标题</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                </div>
+            </div>
+    </template>
+    <template id="no9">
+        <div style="width: 1190px; margin: 0 auto; overflow: hidden; margin-bottom: 50px;">
+            <div style="clear: both;padding-left: 63px;float:left;">
+                <div style="float:left;padding-top:30px;position: relative;margin-left:10px;margin-bottom:20px;height:319px;width:260px;"
+                    v-for="(i,$index) in arr">
+                    <div style="width:260px;height:349px;float: left;position: absolute;top:30px;left:10px;transition:all 0.4s;z-index: 999;"
+                        :class="index==$index?'s':''" @mouseover="index=$index" @mouseout="index='-1'">
+                    </div>
+                    <li
+                        style="height:349px;width:260px;margin-bottom:30px;padding-bottom:30px;padding:10px;float: left;">
+
+                        <div style="">
+                            <div style="background-color: #e9e9e9;height:349px;width:260px;">
+                                <div
+                                    style="overflow:hidden;display:block;width:260px;text-align:center;padding-bottom:10px;">
+                                    <img style="transition:all 0.4s;" :class="index==$index?'s1':''" :src="i" alt="">
+                                </div>
+                                <div
+                                    style="padding-top:25px;padding-bottom:3px;font-weight:normal;color:#333333;line-height:13px;vertical-align:middle;text-align: center;width: 100%">
+                                    <a href="#"
+                                        style="color:#333333;font-size:14px;font-family:微软雅黑;line-height: 20px;">仪器设备Um350c</a>
+                                </div>
+                                <div style="text-align:center;color:#999999;font-size:12px;font-family:微软雅黑;">
+                                    <p>编辑设备副标题</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                </div>
+            </div>
+    </template>
+    <!-- 新闻 -->
+    <template id="news">
+        <div>
+            <div style="width:100%;border-top: 1px solid #cccccc;">
+                <div style="width: 100%;">
+                    <div style="padding-top: 60px;padding-bottom: 100px;">
+                        <div style="max-width: 1280px;margin: 0 auto;min-height: 800px;display: flex;" id="cs">
+                            <div style="padding:0 40px;min-height: 800px;width: 300px;flex: 3;">
+                                <div style="background-color: #999;width: 245px;height: 38px;padding: 1px 2px 1px 3px;">
+                                    <div
+                                        style="padding: 2px;color: #fff;font-size: 18px;width: 20px;height: 20px;font-weight: bold;float: left;margin-top: 8px;">
+                                        =
+                                    </div>
+                                    <div style="max-width:calc(100%-30px);float: left;margin-top: 10px">
+                                        <div
+                                            style="font-family: 微软雅黑;font-size: 14px;font-weight: normal;font-style: normal;color: #ffffff;">
+                                            <a href="#/all" style="color: #fff">全部资讯</a></div>
+                                    </div>
+                                    <div style="float: right;margin-top: 5px;">
+                                        <div
+                                            style="max-width: 100%;text-align: center;font-family: 微软雅黑;font-size: 12px;color: #ffffff;padding: 5px;">
+                                            ▼
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    style="width: 250px;height: 38px;padding: 1px 2px 1px 3px;border: 1px solid #ccc;box-sizing: border-box;">
+                                    <span
+                                        style="font-size: 13px;color: #999;padding: 10px 0;padding-left: 10px;line-height: 36px;"><a
+                                            href="#/no3/hy">▼&nbsp;企业动态</a></span>
+                                </div>
+                                <div
+                                    style="width: 250px;height: 38px;padding: 1px 2px 1px 3px;border: 1px solid #ccc;box-sizing: border-box;">
+                                    <span
+                                        style="font-size: 13px;color: #999;padding: 10px 0;padding-left: 10px;line-height: 36px;"><a
+                                            href="#/no3/qy">▼&nbsp;行业资讯</a></span>
+                                </div>
+                            </div>
+                            <div style="flex: 7;">
+                                <div style="min-height:60px;list-style: none;min-width: 900px;">
+                                    <news></news>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <!-- 加入我们 -->
+    <template id="we">
+        <div>
+            <div class="f-content">
+                <div class="cleft">
+                    <span style="color: #fff;font-size: 18px;">=</span>
+                    加入我们
+                    <span style="float: right;margin-right:10px; color: #fff">▼</span>
+                </div>
+                <div class="cright">
+                    <wes></wes>
+                    <wes></wes>
+                    <wes></wes>
+                </div>
+            </div>
+        </div>
+    </template>
+    <!-- 联系我们 -->
+    <template id="contact">
+        <div>
+            <div style="overflow: hidden;">
+                <div class="box">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="width: 800px;"><img src="img/download_1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/download_2.jpg" alt=""></div>
+
+                    </div>
+                    <div style="margin-top: 60px;margin-left: 50px;width:1263px;height:380px;margin-bottom: 50px;">
+                        <div style="float:left;">
+                            <div
+                                style="background-color: #999;width:262px;height:40px;line-height: 40px;text-indent: 2em;margin-bottom: 30px;">
+                                <span
+                                    style="font-family: 微软雅黑;font-size: 14px;font-weight: normal;font-style: normal;color: #ffffff;vertical-align: bottom;">联系我们</span>
+                            </div>
+                            <div style="font-family: 微软雅黑;color:#000;line-height: 30px;font-size: 16px;">Um生物科技有限公司
+                            </div>
+                            <div style="color: #A9A9A9;font-family: arial;
+                            font-size: 14px;margin-bottom: 30px;">Um biotechnology Co.,Ltd</div>
+                            <div style="font-family: 微软雅黑;font-size: 14px;color: #808080;margin-bottom: 15px;">联系电话 :
+                                1000 8000
+                            </div>
+                            <div style="font-family: 微软雅黑;font-size: 14px;color: #808080;margin-bottom: 15px;">销售热线：400
+                                8888
+                                8888</div>
+                            <div style="font-family: 微软雅黑;font-size: 14px;color: #808080;margin-bottom: 15px;">技术服务：400
+                                6666
+                                6666</div>
+                            <div
+                                style="font-family: 微软雅黑;font-size: 14px;color: #808080;margin-bottom: 15px;margin-bottom: 40px;">
+                                公司传真：1000 8000</div>
+                            <div style="font-family: 微软雅黑;font-size: 14px;color: #808080;">苏州市工业园区金鸡湖大道0号某某大厦0室</div>
+                            <div style="margin-top: 30px;" class="div5">
+                                <img src="https://static.easyicon.net/preview/123/1230528.gif" alt="">
+                                <img src="https://static.easyicon.net/preview/111/1114573.gif" alt="">
+                                <img src="https://static.easyicon.net/preview/116/1164771.gif" alt="">
+                                <img src="https://static.easyicon.net/preview/116/1164775.gif" alt="">
+                                <img src="https://static.easyicon.net/preview/123/1230507.gif" alt="">
+                            </div>
+                        </div>
+                        <div style="float:left;margin-left: 100px;">
+                            <!-- <iframe width="100%" height="100%" src="//57a7e6aaf2f78.t73.qifeiye.com/FeiEditor/bitSite/wp/bit_baidumaps.php?g_lat=&g_lng=&moreaddress=&address=%E4%B8%8A%E6%B5%B7&content=%E4%B8%8A%E6%B5%B7%E5%B8%82&zoom=16" frameborder="0"></iframe> -->
+                            <img style="width:880px;height:400px;" src="img/1576738817(1).jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</body>
+<script src="vue.js"></script>
+<script src="index.js"></script>
+<script src="swiper.min.js"></script>
+<script src="vue-router.js"></script>
+<script src="router.js"></script>
+
+
+
+
+
+</html>

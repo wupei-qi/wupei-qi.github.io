@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 600px;
+            min-height: 400px;
+            background: #ccc;
+            border: 1px solid;
+        }
+        .title_box{
+            float: left;
+            width: 200px;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .title {
+            display: inline-block;
+            
+        }
+        .text_box{
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        .img_box{
+            width: 500px;
+            height: 400px;
+            padding: 20px;
+        }
+        .img_box img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div style="overflow: hidden">
+            <div class="title_box" v-for="(i,$index) in arr">
+                <span class="title"  @click="index=$index">{{i.a}}</span>
+            </div>
+        </div>
+        <div>
+            <tab  v-for="(i,$index) in arr" :ddd="i" v-show="index==$index"></tab>
+        </div>
+    </div>
+    <template id="tab">
+        <div class="box">
+            <div>
+                <div class="text_box">
+                    <p>{{json.b}}</p>
+                </div>
+                <div class="img_box">
+                    <img :src="json.c" alt="">
+                </div>
+            </div>
+        </div>
+    </template>
+</body>
+<script src="vue.js"></script>
+<script>
+    Vue.component('tab', {
+        template: '#tab',
+        props: ['ddd'],
+        data() {
+            return {
+                json: this.ddd
+            }
+        },
+
+    })
+    new Vue({
+        el: '#box',
+        data: {
+            index: 0,
+            arr: [{
+                    a: 'First tab',
+                    b: '1Lorem ipsum dolor ist amet, consectetur adipiscing elit. Suspendisse molestie volutpat consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra.',
+                    c: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1858881657,1091414906&fm=11&gp=0.jpg'
+                },
+                {
+                    a: 'Second tab',
+                    b: '2Lorem ipsum dolor ist amet, consectetur adipiscing elit. Suspendisse molestie volutpat consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra.',
+                    c: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2491588266,1963864761&fm=26&gp=0.jpg'
+                },
+                {
+                    a: 'Third tab',
+                    b: '3Lorem ipsum dolor ist amet, consectetur adipiscing elit. Suspendisse molestie volutpat consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra.',
+                    c: 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3520789870,3381525394&fm=26&gp=0.jpg'
+                }
+            ]
+        }
+    })
+</script>
+
+</html>
