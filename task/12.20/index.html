@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+
+<body>
+    <div id="box">
+        <div style="width: 1020px;margin: 0 auto;">
+            <div class="me-title">
+                <div class="wf-wrap">
+                    <div class="bit-logo-bar">
+                        <div style="width: 200px;height: 77px;">
+                            <img style="width: 200px;height: 77px;"
+                                src="https://ccdn.goodq.top/caches/6e87fcb6b82084bd1cefe0e3cf607d3e/aHR0cDovLzU2OGNkNGE2Y2ZhMmEudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8wMS8yMGY4NzQ5MmU5ZGZjYjY5ZDhjYzI0YjRkNzEyNDdkNS5wbmc_p_p100_p_3D.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="assistive-info">
+                        <div style="bottom: 60px;font-size: 14px;">
+                            <span style="color: #000;" class="el-icon-user-solid"><a href=""
+                                    style="color: #000;">登录</a></span>
+                            <span style="color: #000;" class="el-icon-s-unfold"><a href=""
+                                    style="color: #000;">注册</a></span>
+                        </div>
+                        <div>
+                            <span class="el-icon-phone" style="color: #000;">123- 456- 7890</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav">
+                    <div>
+                        <navs></navs>
+                    </div>
+                </div>
+            </div>
+            <div class="me-content">
+                <router-view></router-view>
+            </div>
+            <div class="me-footer">
+                <div style="width: 940px;height: 150px;margin: 0 auto;">
+                    <div style="width: 900px;height: 80px;margin: 0 auto;margin-bottom: 30px;">
+                        <div style="width: 200px;height: 77px;margin: 0 auto;">
+                            <img style="width: 200px;height: 77px;"
+                                src="https://ccdn.goodq.top/caches/6e87fcb6b82084bd1cefe0e3cf607d3e/aHR0cDovLzU2OGNkNGE2Y2ZhMmEudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8wMS8yMGY4NzQ5MmU5ZGZjYjY5ZDhjYzI0YjRkNzEyNDdkNS0yMDB4NzcucG5n.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <p style="text-align: center;color: rgb(169, 169, 169);font-size: 13px;">Copyright © 2006-2016
+                            醫療事務所 經營許可證編號：京CP備01010010號</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 首页 -->
+    <template id="indexs">
+        <div>
+            <div class="mc_row">
+                <el-row :gutter="0">
+                    <el-col :lg="16" style="height: 305px;border: 1px solid rgba(165,165,165,1);">
+                        <div class="grid-content" style=" height: 305px;">
+                            <ban></ban>
+                        </div>
+                    </el-col>
+                    <el-col :lg="8" style="border: 1px solid rgba(165,165,165,1);">
+                        <div class="grid-content">
+                            <div class="column_containter">
+                                <div class="column-text">
+                                    <p style=" font-size:16px;">营業時間</p>
+                                    <p>星期一<span>08:30~17:30</span></p>
+                                    <p>星期二<span>08:30~17:30</span></p>
+                                    <p>星期三<span>08:30~17:30</span></p>
+                                    <p>星期四<span>08:30~17:30</span></p>
+                                    <p>星期五<span>08:30~17:30</span></p>
+                                    <p>星期六<span>休息~</span></p>
+                                    <p>星期日<span>休息~</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </el-col>
+                </el-row>
+                <el-row>
+                    <el-col :lg="16" class="mc-element">
+                        <a href="#/">
+                            <div class="mc-btn">醫療事務所竭誠為您服務</div>
+                        </a>
+                    </el-col>
+                    <el-col :lg="8" class="mc-element">
+                        <a href="#/line">
+                            <div class="mc-btn"> 進入在線預訂系統</div>
+                        </a>
+                    </el-col>
+                </el-row>
+                <el-row>
+                    <el-col :lg='8' class="mc-element-con">
+                        <div style="color: rgb(128, 128, 128);margin-bottom: 10px;">事務所簡介</div>
+                        <p style="color: rgb(128, 128, 128);line-height: 25px;">
+                            怡怢怣，圤圥夲夳夵壱恀圢圤圥圦圧圩圪咍壱売！圢圤圥夲夳夵壱恀圢圤圥圦圧圩圪咍壱，圢圤怅怆怐怗怘怙怚怛怞怟怡怢怣怤怦怩怭恀圢圤圥圦圧圩圪咍壱。圢圤怅怆怐怗怘怙怚怛怞怟怡怢怣怤怦怩怭夳夵壱圢，圤圥夲夳夵壱恀夳夵壱圢圤圥夲夳。夵壱恌恍恎圤圥夲夳圢圤圥夲夳夵壱圢圤夳
+                            ……
+                        </p>
+                    </el-col>
+                    <el-col :lg='8' class="mc_wrapper">
+                        <div class="mc-con-img"><img
+                                src="https://ccdn.goodq.top/caches/6e87fcb6b82084bd1cefe0e3cf607d3e/aHR0cDovLzU2OGNkNGE2Y2ZhMmEudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8wMS8xYmZkYzdkNGFhNzFmOGQwNTU1NmEzY2JjODM0YzMxOS00MDB4Mzc5LmpwZw_p_p100_p_3D_p_p100_p_3D.jpg"
+                                alt=""></div>
+                    </el-col>
+                    <el-col :lg='8' class="mc_wrapper" style="background-color: #f7f7f7;padding: 10px;">
+                        <div class="mc-con-r" v-for="i in 6">
+                            <a href="">
+                                <p style="color:#7f7f7f; font-size: 14px;line-height: 25px;">醫療諮詢圢圤圥圦圧圩#7</p>
+                            </a>
+                            <div style="color:#7f7f7f;font-size: 12px; line-height: 15px;">发布日期：2016-01-27</div>
+                        </div>
+                    </el-col>
+                </el-row>
+                <el-row>
+                    <el-col :lg="8" class="mc-element">
+                        <a href="#/about">
+                            <div class="mc-btn"> 機構簡介</div>
+                        </a>
+                    </el-col>
+                    <el-col :lg="8" class="mc-element">
+                        <a href="#/news-t">
+                            <div class="mc-btn"> 先進的醫療器械</div>
+                        </a>
+                    </el-col>
+                    <el-col :lg="8" class="mc-element">
+                        <a href="#/news">
+                            <div class="mc-btn"> 醫療資訊</div>
+                        </a>
+                    </el-col>
+                </el-row>
+                </el-row>
+                <el-row>
+                    <el-col :lg="16" class="mc-element-footer" style="padding:12px 50px;">
+                        <div style="padding-top: 50px;">
+                            <p class="mc-footer-text">
+                                圥圦圧圩圪咍壱圢圤怅怆怐，怗怘怙怚怛怞怟怡怢怣怤怦怩怭夳夵壱圢圤圥夲夳夵壱恀夳夵壱圢圤圥。夲夳夵壱恌恍恎恏恒
+                                恔恖恘恙恜恧恬恺，恽夳夵壱圢圤圥夲夳夵壱夲夳夵壱圢圤圥夲夳夵壱圤圥夲，夳圢圤圥夲夳夵壱圢圤圢圤圥圦圧圩圪咍壱圢圤怅怆怐，怗怘怙怚怛怞怟怡怢怣怤怦怩怭夳夵壱圢圤圥夲夳夵壱。恀夳夵壱圢圤圥夲夳夵壱恌恍恎恏。恒
+                                恔恖恘恙恜恧恬恺，恽夳夵壱圢圤圥夲夳圢。恔恖恘恙恜恧恬恺，恽夳夵壱圢圤圥夲夳圢。恔恖恘恙恜恧恬恺，恽夳夵壱圢圤圥夲夳圢。
+                            </p>
+                        </div>
+                    </el-col>
+                    <el-col :lg="8" class="mc-element-footer">
+                        <div style="width: 339px;height: 350px;">
+                            <iframe src="https://map.baidu.com/@12748538.99,4559724.44,12z" width="100%"
+                                height="100%"></iframe>
+                        </div>
+                    </el-col>
+                </el-row>
+                <el-row>
+                    <el-col :lg="16" class="mc-element">
+                        <a href="#/about">
+                            <div class="mc-btn"> 關於我們</div>
+                        </a>
+                    </el-col>
+                    <el-col :lg="8" class="mc-element">
+                        <a href="#/contact">
+                            <div class="mc-btn"> 查看詳細地址</div>
+                        </a>
+                    </el-col>
+                </el-row>
+            </div>
+    </template>
+    <!-- 关于我们 -->
+    <template id="abouts">
+        <div>
+            <news></news>
+            <router-view></router-view>
+        </div>
+    </template>
+    <!-- 医疗器械 -->
+    <template id="news-t">
+        <div>
+            <news2></news2>
+        </div>
+    </template>
+    <!-- 在线预约 -->
+    <template id="lines">
+        <div>
+            <div class="lines-con">
+                <div class="lines-top">
+                    <div class="lines-top-l">
+                        <p>在 線 預 約</p>
+                        <p style="font-size: 12px">B O O K I N G</p>
+                    </div>
+                    <div class="lines-top-r">
+                        <div>
+                            <div class="circular active">
+                                1
+                            </div>
+                            <p class="active1">選擇科室</p>
+                        </div>
+                        <div>
+                            <div class="circular">2</div>
+                            <p>選擇醫生</p>
+                        </div>
+                        <div>
+                            <div class="circular">3</div>
+                            <p>點擊預定</p>
+                        </div>
+                        <div>
+                            <div class="circular">4</div>
+                            <p>預約完成</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="lines-bottom">
+                    <div class="lines-bottom-l">
+                        <p>臨 床 科 室</p>
+                        <p style="font-size: 12px">D E P A R T M E N T</p>
+                    </div>
+                    <a href="">
+                        <div class="lines-bottom-r">耳鼻喉科</div>
+                    </a>
+                    <a href="">
+                        <div class="lines-bottom-r">儿科</div>
+                    </a>
+                    <a href="">
+                        <div class="lines-bottom-r">中医科</div>
+                    </a>
+                    <a href="">
+                        <div class="lines-bottom-r">普通外科</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </template>
+    <!-- 医院资讯 -->
+    <template id="news">
+        <div>
+            <div class="news2-element">
+                <div class="news2-l">
+                    <p>醫 療 資 訊</p>
+                    <p style="font-size: 16px;"> M E D I C A L N E W S</p>
+                </div>
+                <div class="news2-r">
+                    <articles></articles>
+                </div>
+            </div>
+            <router-view></router-view>
+        </div>
+    </template>
+    <template id="contact">
+        <div>
+            <div class="mc-contact">
+                <el-row style="height:260px;">
+                    <el-col :lg="8" class="mc-top-l">
+                        <p>聯 繫 我 們</p>
+                        <p style="font-size: 16px;">C O N T A C T U S</p>
+                    </el-col>
+                    <el-col :lg="16" class="mc-top-r">
+                        <div style="width: 680px;height: 255px;">
+                            <iframe src="https://map.baidu.com/@12748538.99,4559724.44,12z" width="100%"
+                                height="100%"></iframe>
+                        </div>
+                    </el-col>
+                </el-row>
+                <el-row style="height:260px;">
+                    <el-col :lg="8" class="mc-bottom-l">
+                        <div class="mc-bottom-l-text">
+                            <p style=" font-size:16px;">营業時間</p>
+                            <p>星期一<span>08:30~17:30</span></p>
+                            <p>星期二<span>08:30~17:30</span></p>
+                            <p>星期三<span>08:30~17:30</span></p>
+                            <p>星期四<span>08:30~17:30</span></p>
+                            <p>星期五<span>08:30~17:30</span></p>
+                            <p>星期六<span>休息~</span></p>
+                            <p>星期日<span>休息~</span></p>
+                        </div>
+                    </el-col>
+                    <el-col :lg="16" class="mc-bottom-r">
+                        <div class="mc-bottom-r-text">
+                            <p>地址：香港中环忿怂怃恾悈悊朰恓恙恾恿悀忾忿怂</p>
+                            <p>电话：0100-1000 0000</p>
+                            <p>电话：0100-1000 0000</p>
+                        </div>
+                    </el-col>
+                </el-row>
+            </div>
+        </div>
+    </template>
+    <!--  -->
+    <template id="essays">
+        <div>
+            <div class="mc-essays">
+                <div class="mc-essays-text">
+                    <h5 class="mc-essays-tit">醫療諮詢圢圤圥圦圧圩#6</h5>
+                    <p class="mc-essays-time">发布日期：2016-01-27</p>
+                    <div class="mc-essays-con">
+                        夳夵壱売壳圢圤圥圦圧圩圪咍，壱売壳圢圤怅怆怐，怗怘怙怚怛怞怟怡怢怣怤怦怩怭夳夵壱売壳圢圤圥夲夳夵壱売壳。恀夳夵壱売壳圢圤圥夲夳夵壱売壳恌恍恎恏。恒恔恖恘恙恜恧恬恺，恽夳夵壱売壳圢圤圥夲夳夵壱売壳。夲夳夵壱売壳圢圤圥夲夳夵壱売壳圢圤夳夵。壱売壳夲夳夵壱売壳圢圤圥圦夲。圢圤圥夲夳夵壱売壳。恀夳夵壱売壳圢圤圥夲夳夵壱売壳恌恍恎恏。恒恔恖恘恙恜恧恬恺，恽夳夵壱売壳圢圤圥夲夳夵壱売壳。夲夳夵壱売壳圢圤圥夲夳夵壱売壳圢圤夳夵。壱売圢圤圥夲夳夵壱売壳。恀夳夵壱売壳圢圤圥夲夳夵壱売壳恌恍恎恏。恒恔恖恘恙恜恧恬恺，恽夳夵壱売壳圢圤圥夲夳夵壱売壳。夲夳夵壱売壳圢圤圥夲夳夵壱売壳圢圤夳夵。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</body>
+<script src="js/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="js/js.js"></script>
+<script src="js/vue-router.js"></script>
+<script src="js/router.js"></script>
+
+
+</html>
